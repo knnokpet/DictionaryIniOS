@@ -15,6 +15,7 @@
 		865A37681A17698D004FA20B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865A37671A17698D004FA20B /* Images.xcassets */; };
 		865A37771A17698D004FA20B /* SearchIniOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865A37761A17698D004FA20B /* SearchIniOSTests.swift */; };
 		865A37851A1784EC004FA20B /* MasterVieController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865A37841A1784EC004FA20B /* MasterVieController.xib */; };
+		86D7FF911A36E31A0036A5F3 /* NoResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D7FF901A36E31A0036A5F3 /* NoResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		865A37751A17698D004FA20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		865A37761A17698D004FA20B /* SearchIniOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIniOSTests.swift; sourceTree = "<group>"; };
 		865A37841A1784EC004FA20B /* MasterVieController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterVieController.xib; sourceTree = "<group>"; };
+		86D7FF901A36E31A0036A5F3 /* NoResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				865A375E1A17698D004FA20B /* AppDelegate.swift */,
 				865A37601A17698D004FA20B /* MasterViewController.swift */,
 				8628AFCD1A18732400FFC7DC /* TableViewCell.swift */,
+				86D7FF901A36E31A0036A5F3 /* NoResultView.swift */,
 				865A37671A17698D004FA20B /* Images.xcassets */,
 				865A37841A1784EC004FA20B /* MasterVieController.xib */,
 				8628AFCF1A18790600FFC7DC /* SearchTableViewCell.xib */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D7FF911A36E31A0036A5F3 /* NoResultView.swift in Sources */,
 				865A37611A17698D004FA20B /* MasterViewController.swift in Sources */,
 				8628AFCE1A18732400FFC7DC /* TableViewCell.swift in Sources */,
 				865A375F1A17698D004FA20B /* AppDelegate.swift in Sources */,
