@@ -140,7 +140,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             let duration: NSTimeInterval = 0.3
             let delay: NSTimeInterval = 0.0
-            UIView.animateWithDuration(1.0, delay: 0.3, options: UIViewAnimationOptions.LayoutSubviews, animations: {() -> Void in
+            UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.LayoutSubviews, animations: {() -> Void in
                 resultView.alpha = 0.0
                 
                 }, completion: {(Bool) -> Void in
