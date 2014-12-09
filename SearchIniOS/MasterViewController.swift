@@ -130,6 +130,23 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         let hasDifinition: Bool = UIReferenceLibraryViewController.dictionaryHasDefinitionForTerm(searchBar.text)
         if hasDifinition == false {
+            
+            let width: CGFloat = 180.0
+            let height: CGFloat = 120.0
+            let boundsCenter: CGPoint = self.view.center
+            let resultView: NoResultView = NoResultView(frame: CGRectMake(boundsCenter.x - (width / 2), boundsCenter.y - (height / 2), width, height))
+            
+            self.view.addSubview(resultView)
+            
+            let duration: NSTimeInterval = 0.3
+            let delay: NSTimeInterval = 0.0
+            UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.LayoutSubviews, animations: {() -> Void in
+                resultView.alpha = 0.0
+                
+                }, completion: {(Bool) -> Void in
+                    resultView.removeFromSuperview()
+            })
+            
             return
         }
         
