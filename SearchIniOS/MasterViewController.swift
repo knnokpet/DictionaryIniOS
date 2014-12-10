@@ -58,7 +58,6 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func configureTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.OnDrag
         
         let cell: UINib = UINib(nibName: "SearchTableViewCell", bundle: nil)
         self.tableView.registerNib(cell, forCellReuseIdentifier: "Cell")
@@ -157,7 +156,9 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.tableView.endUpdates()
         
         let referenceLibraryViewController: UIReferenceLibraryViewController = UIReferenceLibraryViewController(term: searchBar.text)
-        self.navigationController?.presentViewController(referenceLibraryViewController, animated: true, completion: nil)
+        self.navigationController?.presentViewController(referenceLibraryViewController, animated: true, completion: {
+            searchBar.text = nil
+        })
     }
     /*
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
